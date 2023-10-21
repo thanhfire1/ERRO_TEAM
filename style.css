@@ -51,3 +51,41 @@ h1 {
 .collection h2 {
     margin-bottom: 10px;
 }
+.tuade h1{
+
+}
+.right-align {
+    text-align: right;
+    margin-right: 500px;
+    padding-bottom:50px;
+    position: relative;
+    bottom: 60px;
+    right: 230px;
+  
+   
+}
+.price-right-align {
+    text-align: right;
+    margin-right: 550px;
+    position: relative;
+    bottom: 110px;
+    right: 425px;
+    
+  
+   
+}
+.left-align {
+    text-align: left;
+}
+.picture{
+    height: 70px;
+    width: 70px;
+}
+.red-price{
+    text-align: right;
+    margin-right: 500px;
+    padding-bottom:50px;
+    position: relative;
+    bottom: 40px;
+    right: 30px;
+}
