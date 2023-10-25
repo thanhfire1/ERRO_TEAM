@@ -1,4 +1,4 @@
-css
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -10,10 +10,40 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
 }
 
+#menu {
+    background-color: #f0f0f0;
+    margin: 0; 
+    padding: 0; 
+}
+#menu ul {
+    list-style-type: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu li a {
+    display: block; 
+    text-align: center; 
+    color: rgb(7, 7, 7); 
+    text-decoration: none; 
+    padding: 15px;
+    margin-right: 70px;
+
+    
+}
+#menu li a:hover {
+  color: blue; 
+}
+#memu from button{
+    display: flex;
+    margin-right: 70px;
+    border-radius: 20px;
+   
+}
 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -51,3 +81,46 @@ h1 {
 .collection h2 {
     margin-bottom: 10px;
 }
+
+.right-align {
+    text-align: right;
+    margin-right: 750px;
+    position: relative;
+    bottom: 80px;
+    right: 265px;
+  
+   
+}
+.id-profile{
+    position: relative;
+    bottom: 80px;
+    left: 112px;
+    margin-right: 750px;
+    background-color: rgb(173, 172, 172);
+}
+.price-right-align {
+    text-align: right;
+    margin-right: 550px;
+    position: relative;
+    bottom: 110px;
+    right: 425px;
+    
+  
+   
+}
+.left-align {
+    text-align: left;
+}
+.picture{
+    height: 70px;
+    width: 70px;
+}
+.red-price{
+    text-align: right;
+    margin-right: 500px;
+    padding-bottom:50px;
+    position: relative;
+    bottom: 40px;
+    right: 30px;
+}
+
