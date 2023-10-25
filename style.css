@@ -44,6 +44,15 @@ body {
     border-radius: 20px;
    
 }
+#search{
+    border-radius: 13px;
+    width: 400px;
+}
+#search-2{
+    border-radius: 10px;
+    width: 300px;
+}
+
 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -123,4 +132,3 @@ h1 {
     bottom: 40px;
     right: 30px;
 }
-
