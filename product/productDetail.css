@@ -86,6 +86,9 @@ h6 {
     border-radius: 80px;
 }
 
+.twitter:hover{
+    background-color: red;
+}
 /*-------------------------------------------*/
 /*Phần 2*/
 .past_2 {
@@ -129,7 +132,7 @@ option {
 .left {
     float: left;
     width: 27%;
-    height: 300px;
+    height: 862px;
     border: 1px solid black;
     margin-top: 9px;
 }
@@ -278,4 +281,34 @@ form {
 
 .buy_now:hover {
     background-color: aquamarine;
+}
+
+/*Accordion || Ammount of attributes*/
+.title-accordion{
+    margin-left: -17px;
+    margin-top: 5px;
+}
+
+.checkBox-accordion{
+    margin-left: 372px;
+    margin-top: -38px;
+}
+
+.title-accordion{
+    color: white;
+}
+
+/*1 - Accordion*/
+.number-accordion{
+    margin-left: -17px;
+    font-size: 10px;
+    margin-top: -6px;
+    color: whitesmoke;
+}
+
+.person-accordion{
+    margin-top: -31px;
+    font-size: 10px;
+    margin-left: 32px;
+    color: whitesmoke;
 }
