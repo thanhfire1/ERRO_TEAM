@@ -1,0 +1,53 @@
+.title{
+    font-size: 35px;
+    margin-left: -110px;
+    font-weight: bolder;
+}
+
+.search{
+    font-size: 19px;
+    
+}
+
+
+li:hover{
+    background-color: orangered;
+}
+
+li{
+    font-weight: bold;
+}
+
+.button_connect{
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+#back{
+    padding: 20px 0 0 10px;
+}
+
+.dev{
+    padding: 20px 0 0 0 ;
+}
+.dev a{
+    margin-left: 1050px;
+}
+.publicprofile{
+    margin-left: 70px;
+    padding: 20px 0 0 10px;
+}
+.tt{
+    padding: 0px 0 0 150px;
+}
+.tt input{
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.updateprofile{
+    margin-left: 1200px;
+    background-color: blue;
+    color: white;
+}
