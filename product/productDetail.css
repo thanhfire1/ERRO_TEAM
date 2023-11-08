@@ -132,7 +132,7 @@ option {
 .left {
     float: left;
     width: 27%;
-    height: 862px;
+    height: 851px;
     border: 1px solid black;
     margin-top: 9px;
 }
@@ -311,4 +311,36 @@ form {
     font-size: 10px;
     margin-left: 32px;
     color: whitesmoke;
+}
+
+/*Footer*/
+.footer-links .links  {
+    position: absolute;
+ }
+
+.footer-links .links a i {
+    font-size: 2.2rem;
+    color: #F1EFEF;
+    display: flex;
+    align-items: center;
+    margin-left: -1px;
+ }
+
+ .footer-links .links a i:hover{
+    color: rgb(243, 21, 89);
+ } 
+
+ .footer{
+    margin-bottom: 1000px;
+ }
+
+ .footer-box li a:hover{
+    transform: translate( 10px);
+}
+.text-uppercase{
+    margin-left: -10px;
+}
+
+h6{
+    color: rgb(243, 21, 89); 
 }
