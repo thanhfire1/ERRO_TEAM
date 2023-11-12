@@ -1,8 +1,3 @@
-<<<<<<< Updated upstream
-.ul.li.a{
-    padding: 500px;
-    
-=======
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 css body {
     font-family: Arial, sans-serif;
@@ -63,7 +58,7 @@ h1 {
     padding-bottom: 50px;
     position: relative;
     bottom: 60px;
-    right: 390px;
+    right: 100px;
 
 
 }
@@ -72,8 +67,8 @@ h1 {
     text-align: right;
     margin-right: 500px;
     position: relative;
-    bottom: 150px;
-    left: 90px;
+    bottom: 200px;
+    left: 375px;
 
 
 
@@ -94,8 +89,8 @@ h1 {
     margin-right: 50px;
 
     position: relative;
-    bottom: 130px;
-    right: 200px;
+    bottom: 150px;
+    right: -40px;
     color: red;
 }
 
@@ -104,8 +99,8 @@ h1 {
     margin-right: 50px;
 
     position: relative;
-    bottom: 120px;
-    right: 172px;
+    bottom: 165px;
+    right: -60px;
 
 }
 
@@ -133,8 +128,9 @@ h1 {
 }
 .take{
     position: relative;
-    left: 155px;
+    left: 222px;
     font-size: 20px;
+    bottom: 32px;
 }
 .buy{
     position: relative;
@@ -346,5 +342,19 @@ body{
     width: 30%;
     border: 1px solid gray;
     border-radius: 10px;
->>>>>>> Stashed changes
+}
+.right-image{
+    position: relative;
+    left: 60%;
+    bottom: 320px;
+    border-image-slice: 80 80 80;
+    
+    
+}
+.background-image{
+    background-color: rgb(143, 138, 138);
+}
+.img-product{
+    position: relative;
+    left: 50%;
 }
