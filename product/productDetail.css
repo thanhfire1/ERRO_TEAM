@@ -51,7 +51,7 @@ body {
 /*Phần 1*/
 .past_1 {
     height: 220px;
-    background-color: darkgray;
+    background-color: rgb(52, 50, 51);
 }
 
 .hinh_1 {
@@ -93,7 +93,7 @@ h6 {
 /*Phần 2*/
 .past_2 {
     height: 1000px;
-    background-color: darkgray;
+    background-color: rgb(87, 86, 87);
 }
 
 .menu_2 {
@@ -132,7 +132,7 @@ option {
 .left {
     float: left;
     width: 27%;
-    height: 851px;
+    height: 875px;
     border: 1px solid black;
     margin-top: 9px;
 }
@@ -229,59 +229,6 @@ form {
     margin-top: -42px;
 }
 
-/*Right*/
-.picture {
-    width: 100%;
-    height: 275px;
-}
-
-.chon {
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
-    background-color: black;
-}
-
-.click_chon {
-    float: right;
-    margin: 7px;
-}
-
-.text_1 {
-    margin-top: -28px;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.price_picture {
-    margin-left: 15px;
-    margin-top: -10px;
-}
-
-.solana_right {
-    width: 19%;
-    height: 35px;
-    border: 1px solid gainsboro;
-    border-radius: 15px;
-    background-color: gainsboro;
-    margin-left: 280px;
-    margin-top: -40px;
-}
-
-.buy {
-    margin-top: 10px;
-}
-
-.buy_now {
-    width: 100%;
-    font-weight: bold;
-    color: blue;
-    background-color: gray;
-}
-
-.buy_now:hover {
-    background-color: aquamarine;
-}
 
 /*Accordion || Ammount of attributes*/
 .title-accordion{
@@ -313,6 +260,84 @@ form {
     color: whitesmoke;
 }
 
+/*Right*/
+.products{
+    float: left;
+    width: 19%;
+    height: 285px;
+    border: 1px solid black;
+    margin-left: 9px;
+    margin-top: 9px;
+    border-radius: 10px;
+}
+
+.picture-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.name-picture{
+    margin-left: 8px;
+    margin-top: 5px;    
+}
+
+.name-pic{
+    font-weight: bolder;
+    float: left;
+    margin-right: 7px;
+    color: white;
+}
+
+.price-left{
+    float: left;
+    margin-left: 8px;
+    margin-top: -15px;
+}
+
+.price-pic-left{
+    font-weight: bold;
+    color: white;
+}
+
+.price-right{
+    float: right;
+    width: 60px;
+    height: 20px;
+    border: 1px solid gray;
+    margin-top: -13px;
+    margin-right: 5px;
+    border-radius: 15px;
+    background-color: rgb(78, 5, 5);
+}
+
+.price-pic-right{
+    margin-top: -2px;
+    font-weight: bold;
+    color: white;
+}
+
+.id-pic{
+    color: rgb(54, 161, 190);
+}
+
+.btn-buy{
+    margin-right: 35px;
+    margin-top: 26px;
+}
+
+.buy-now{
+    width: 70%;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+.buy-now:hover{
+    background-color: red;
+}
 /*Footer*/
 .footer-links .links  {
     position: absolute;
@@ -344,3 +369,4 @@ form {
 h6{
     color: rgb(243, 21, 89); 
 }
+
