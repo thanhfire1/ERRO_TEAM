@@ -1,0 +1,26 @@
+.title{
+    font-size: 35px;
+    margin-left: -110px;
+    font-weight: bolder;
+}
+
+.search{
+    font-size: 19px;
+    
+}
+
+
+li:hover{
+    background-color: orangered;
+}
+
+li{
+    font-weight: bold;
+}
+
+.button_connect{
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 3px;
+}
