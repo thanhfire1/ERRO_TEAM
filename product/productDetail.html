@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/product/productDetail.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- FONTAWESOME -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navar-light" style="background-color:gray;">
+        <div class="container">
+            <img src="/img/Error.webp" alt="100" height="60">
+            <div>
+                <a href="#" class="title navbar-brand">Art Galleries</a>
+            </div>
+            <form class="d-flex">
+                <input class="search form-control-1 me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success me-2" type="submit"><ion-icon name="search-sharp"><i
+                            class='bx bx-search-alt-2'></i></ion-icon></button>
+            </form>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="hs-navbar-toggler" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="trangchu.html" class="nav-link active" aria-current="page" href="#">Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="trangchu.html" class="nav-link active" aria-current="page" href="#">Sell Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="trangchu.html" class="nav-link active" aria-current="page" href="#">Loans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="trangchu.html" class="nav-link active" aria-current="page" href="#">LaunchPad</a>
+                    </li>
+                    <li>
+                        <button class="button_connect">Connect Wallet</button>
+                    </li>
+                    <!-- <div class="flex-shrink-0 dropdown">
+                        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="button_connect">Connect Wallet</button>
+                        </a>
+                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                          <li><a class="dropdown-item" href="#">New project...</a></li>
+                          <li><a class="dropdown-item" href="#">Settings</a></li>
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                      </div> -->
+                </ul>
+            </div>
+    </nav>
+
+    <!-- Phần 1 -->
+    <div class="past_1">
+        <!-- Picture -->
+        <div class="hinh">
+            <img class="hinh_1" src="/img/img2.jpg" alt="">
+            <h3 class="text-white">Jungle Friend</h3>
+            <h6>Jungle Friend are coming to bring joy, quality arts, and...</h6>
+        </div>
+        <!-- Word -->
+        <div class="word text-white">
+            <!-- Word 1 -->
+            <p class="w_1">500 <br> Items</p>
+            <!-- Word 2 -->
+            <p class="w_1">0$ <br> Total volume</p>
+            <!-- Word 3 -->
+            <p class="w_1">-$ <br> Floor</p>
+            <!-- Word 4 -->
+            <p class="w_1">-$ <br> Best global offer</p>
+        </div>
+        <!-- Button twitter -->
+        <div class="bt_twitter">
+            <button class="twitter">Twitter</button>
+        </div>
+    </div>
+
+    <!-- Phần 2 -->
+    <div class="past_2">
+        <div class="menu_2">
+            <div class="p-2 text-dark">
+                <div class="container">
+                    <div class="m_2 d-flex flex-wrap justify-content-center justify-content-lg-start">
+                        <ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center">
+                            <button class="	fa fa-align-justify"></button>
+                            <li class="m_2_1"><a href="#" class="nav-link px-2  text-white">Items</a></li>
+                            <li class="m_2_1"><a href="#" class="nav-link px-2  text-white">Activity</a></li>
+                            <li class="m_2_1"><a href="#" class="nav-link px-2  text-white">Forum</a></li>
+                        </ul>
+
+                        <div class="col-12 col-lg-auto mt-2 mb-lg-0 me-lg-5">
+                            <p class="text-white">Sweep <input class="ranges" type="range" name="" id=""> (0) </p>
+                        </div>
+
+                        <div class="selects">
+                            <select class="price" name="" id="">
+                                <option value="Price low to high">Price low to high</option>
+                                <option value="Price high to low">Price high to low</option>
+                                <option value="HowRare: common to care">HowRare: common to rare</option>
+                                <option value="HowRare: rare to common">HowRare: rare to common</option>
+                                <option value="Recently listed">Recently listed</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Phần 3 -->
+        <!-- Sum -->
+        <div class="sum">
+            <!-- Left -->
+            <div class="left">
+                <!-- Search -->
+                <div class="search">
+                    <p class="title_search text-white">Search:</p>
+                    <form class="d-flex">
+                        <input class="search form-control-1 me-2 w-100" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><ion-icon name="search-sharp"><i
+                                    class='bx bx-search-alt-2'></i></ion-icon></button>
+                    </form>
+                </div>
+                <br>
+                <!-- Price Range -->
+                <div class="priceRange">
+                    <p class="title_priceRange text-white">Price range:</p>
+                    <div class="min">
+                        <button class="price_min">MIN</button>
+                    </div>
+                    <p class="to text-white">to</p>
+                    <div class="max">
+                        <button class="price_max">MAX</button>
+                    </div>
+                </div>
+                <br>
+                <!-- Button Apply -->
+                <div class="button_apply">
+                    <button class="apply">APPLY</button>
+                </div>
+                <br>
+                <!-- Buy now -->
+                <div class="checkbox_buy">
+                    <p class="title_CheckBox text-white">Buy now</p>
+                    <div class="checkBox_buyNow">
+                        <input class="checkButton" type="checkbox" name="" id="">
+                    </div>
+                </div>
+                <!-- Show aggregated listings -->
+                <div class="checkbox_buy">
+                    <p class="title_CheckBox text-white">Show aggregated listings</p>
+                    <div class="checkBox_buyNow">
+                        <input class="checkButton" type="checkbox" name="" id="">
+                    </div>
+                </div>
+                <br>
+
+                <!--  Accordion || Amount of attributes -->
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- #First -->
+                    <div class="accordion-item" style="background-color: gray;">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed text-white fw-bold" type="button"
+                                style="background-color: gray;" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Amount of attributes
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <form class="d-flex">
+                                    <input class="search form-control-1 me-2 w-100" type="search"
+                                        placeholder="Search amount of attributes" aria-label="Search">
+                                    <button class="btn btn-outline-success me-2" type="submit"><ion-icon
+                                            name="search-sharp"><i class='bx bx-search-alt-2'></i></ion-icon></button>
+                                </form>
+                                <!-- 1 -->
+                                <div class="accordion">
+                                    <div class="check-accordion">
+                                        <p class="title-accordion fw-bold">6</p>
+                                        <div class="checkBox-accordion">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+
+                                        <div class="number-accordion">
+                                            <p class="listed-accordion fw-bold">372 listed</p>
+                                        </div>
+
+                                        <div class="person-accordion">
+                                            <p class="person fw-bold">• 30.00%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="accordion">
+                                    <div class="check-accordion">
+                                        <p class="title-accordion fw-bold">8</p>
+                                        <div class="checkBox-accordion">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+
+                                        <div class="number-accordion">
+                                            <p class="listed-accordion fw-bold">372 listed</p>
+                                        </div>
+
+                                        <div class="person-accordion">
+                                            <p class="person fw-bold">• 30.00%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="accordion">
+                                    <div class="check-accordion">
+                                        <p class="title-accordion fw-bold">10</p>
+                                        <div class="checkBox-accordion">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+
+                                        <div class="number-accordion">
+                                            <p class="listed-accordion fw-bold">372 listed</p>
+                                        </div>
+
+                                        <div class="person-accordion">
+                                            <p class="person fw-bold">• 30.00%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion || Background -->
+                    <div class="accordion-item" style="background-color: gray;">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed fw-bold text-white"
+                                style="background-color: gray;" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Background
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <form class="d-flex">
+                                    <input class="search form-control-1 me-2 w-100" type="search"
+                                        placeholder="Search background" aria-label="Search">
+                                    <button class="btn btn-outline-success me-2" type="submit"><ion-icon
+                                            name="search-sharp"><i class='bx bx-search-alt-2'></i></ion-icon></button>
+                                </form>
+                                <!-- 1 -->
+                                <div class="accordion">
+                                    <div class="check-accordion">
+                                        <p class="title-accordion fw-bold">10</p>
+                                        <div class="checkBox-accordion">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+
+                                        <div class="number-accordion">
+                                            <p class="listed-accordion fw-bold">372 listed</p>
+                                        </div>
+
+                                        <div class="person-accordion">
+                                            <p class="person fw-bold">• 30.00%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="accordion">
+                                    <div class="check-accordion">
+                                        <p class="title-accordion fw-bold">10</p>
+                                        <div class="checkBox-accordion">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+
+                                        <div class="number-accordion">
+                                            <p class="listed-accordion fw-bold">372 listed</p>
+                                        </div>
+
+                                        <div class="person-accordion">
+                                            <p class="person fw-bold">• 30.00%</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="accordion">
+                                    <div class="check-accordion">
+                                        <p class="title-accordion fw-bold">10</p>
+                                        <div class="checkBox-accordion">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+
+                                        <div class="number-accordion">
+                                            <p class="listed-accordion fw-bold">372 listed</p>
+                                        </div>
+
+                                        <div class="person-accordion">
+                                            <p class="person fw-bold">• 30.00%</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- Accordion || Clothes -->
+                    <div class="accordion-item" style="background-color: gray;">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed fw-bold text-white"
+                                style="background-color: gray;" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Clothes
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <form class="d-flex">
+                                    <input class="search form-control-1 me-2 w-100" type="search"
+                                        placeholder="Search clothes" aria-label="Search">
+                                    <button class="btn btn-outline-success me-2" type="submit"><ion-icon
+                                            name="search-sharp"><i class='bx bx-search-alt-2'></i></ion-icon></button>
+                                </form>
+                                <!-- 1 -->
+                                <div class="accordion">
+                                    <div class="check-accordion">
+                                        <p class="title-accordion fw-bold">10</p>
+                                        <div class="checkBox-accordion">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+
+                                        <div class="number-accordion">
+                                            <p class="listed-accordion fw-bold">372 listed</p>
+                                        </div>
+
+                                        <div class="person-accordion">
+                                            <p class="person fw-bold">• 30.00%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="accordion">
+                                    <div class="check-accordion">
+                                        <p class="title-accordion fw-bold">10</p>
+                                        <div class="checkBox-accordion">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+
+                                        <div class="number-accordion">
+                                            <p class="listed-accordion fw-bold">372 listed</p>
+                                        </div>
+
+                                        <div class="person-accordion">
+                                            <p class="person fw-bold">• 30.00%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="accordion">
+                                    <div class="check-accordion">
+                                        <p class="title-accordion fw-bold">10</p>
+                                        <div class="checkBox-accordion">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+
+                                        <div class="number-accordion">
+                                            <p class="listed-accordion fw-bold">372 listed</p>
+                                        </div>
+
+                                        <div class="person-accordion">
+                                            <p class="person fw-bold">• 30.00%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" style="background-color: gray;">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button fw-bold text-white" type="button" data-bs-toggle="collapse"
+                                style="background-color: gray;" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                Head
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <form class="d-flex">
+                                    <input class="search form-control-1 me-2 w-100" type="search"
+                                        placeholder="Search head" aria-label="Search">
+                                    <button class="btn btn-outline-success me-2" type="submit"><ion-icon
+                                            name="search-sharp"><i class='bx bx-search-alt-2'></i></ion-icon></button>
+                                </form>
+                                <!-- 1 -->
+                                <div class="accordion">
+                                    <div class="check-accordion">
+                                        <p class="title-accordion fw-bold">10</p>
+                                        <div class="checkBox-accordion">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+
+                                        <div class="number-accordion">
+                                            <p class="listed-accordion fw-bold">372 listed</p>
+                                        </div>
+
+                                        <div class="person-accordion">
+                                            <p class="person fw-bold">• 30.00%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="accordion">
+                                    <div class="check-accordion">
+                                        <p class="title-accordion fw-bold">10</p>
+                                        <div class="checkBox-accordion">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+
+                                        <div class="number-accordion">
+                                            <p class="listed-accordion fw-bold">372 listed</p>
+                                        </div>
+
+                                        <div class="person-accordion">
+                                            <p class="person fw-bold">• 30.00%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="accordion">
+                                    <div class="check-accordion">
+                                        <p class="title-accordion fw-bold">10</p>
+                                        <div class="checkBox-accordion">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+
+                                        <div class="number-accordion">
+                                            <p class="listed-accordion fw-bold">372 listed</p>
+                                        </div>
+
+                                        <div class="person-accordion">
+                                            <p class="person fw-bold">• 30.00%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right -->
+            <div class="right">
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+                <div class="products">
+                    <div class="imgs">
+                        <img src="/img/img3.jpg" alt="" class="picture-img">
+                    </div>
+                    <div class="name-picture">
+                        <p class="name-pic">Samurai Paws</p>
+                        <p class="id-pic">#8686</p>
+                    </div>
+                    <div class="price-left">
+                        <p class="price-pic-left"><i class='fas fa-dollar-sign' style='font-size:15px'></i> 0.6</p>
+                    </div>
+                    <div class="price-right">
+                        <p class="price-pic-right"><i class='fas fa-ruble-sign' style='font-size:15px'></i> 3052</p>
+                    </div>
+                    <div class="btn-buy">
+                        <button class="buy-now"><i class="fa fa-shopping-cart"></i> BUY</button>
+                    </div>  
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Theo dõi chúng tôi:</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fa-solid fa-gem"></i> Error Team
+                </h6>
+                <p>
+                  Ở đây chúng tôi có tất cả những tấm hình đẹp và nét, xịn xò
+                  mà chắc chắn bạn sẽ cần ❤️.
+                </p>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Liên hệ</h6>
+                <p><i class="fas fa-home me-3 text-secondary"></i> 23/5 - KVPMQT - Q.12 - Hồ Chí Minh</p>
+                <p>
+                  <i class="fas fa-envelope me-3 text-secondary"></i>
+                  newbee22@example.com
+                </p>
+                <p><i class="fas fa-phone me-3 text-secondary"></i> + 0768 916 167</p>
+                <p><i class="fas fa-print me-3 text-secondary"></i> + 0256 678 882</p>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 sanpham">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Sản phẩm
+                </h6>
+                <p>
+                  <a href="#!" class="text-secondary">Điện thoại</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-secondary">Laptop</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-secondary">Phụ kiện</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 gioithieu">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Giới thiệu
+                </h6>
+                <iframe class="mt-1" style="border-radius: 10px;" width="280" height="200" src="https://www.youtube.com/embed/UskBAildgLg" 
+                            title="[HỌC CÙNG MÌNH] 3-HOUR STUDY WITH ME 🎡 / ambient ver. / Yokohama at Sunset / Pomodoro 25-5" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+              </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">ErrorTeam.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body> 
+
+</html>
