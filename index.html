@@ -9,15 +9,20 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- owl carousel -->
+<script src = "owl_carousel/owl.carousel.js"></script>
+
    <!-- bootstrap -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <!-- fontawesome cdn -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- owl carousel -->
     
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style1.css">
-  <link rel="stylesheet" href="style4.css">
+  <link rel="stylesheet" href="/index/style.css">
+  <link rel="stylesheet" href="/index/style2.css">
+  <link rel="stylesheet" href="/index/style4.css">
   
   <link rel = "stylesheet" href = "owl_carousel/owl.carousel.css">
   <link rel = "stylesheet" href = "owl_carousel/owl.theme.default.css">
@@ -62,13 +67,12 @@
 
           </li>
           <li class="nav-item">
-            <a href="trangchu.html" class="nav-link active" aria-current="page" href="#">LaunchPad</a>
+            <a href="trangchu.html" class="nav-link active" aria-current="page" href="#">Create NFT</a>
 
           </li>
           <li>
-            <button class="button_connect" onclick="connectWallet()" >Connect Wallet</button>
-            <input  type="file" id="fileInput">
-            <button id ="Mint" onclick="mintNft()"> MINT NFT</button>
+            <button class="button_connect" onclick="connectWallet()">Connect Wallet</button>
+            
           </li>
         </ul>
         </form>
@@ -1066,85 +1070,9 @@ Trade NFTs
   </footer>
 
 
-<!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- owl carousel -->
-<script src = "owl_carousel/owl.carousel.js"></script>
-<script src = "script.js"></script>
-    
 
-<script >
 
-  
-
-  let publicKey;
-  
-  //Auto Connect
-  (async () => {
-      await window.phantom.solana.connect();
-  
-  publicKey = window.phantom.solana.publicKey.toBase58();
-  console.log(publicKey);
-  })();
-  
-  //Manual connect 
-  const connectWallet = async () =>{
-      await window.phantom.solana.connect();
-  
-      publicKey = window.phantom.solana.publicKey.toBase58();
-      console.log(publicKey);
-  }
-  
-  //========= [Mint NFT] ==========
-  const PRIV_KEY = "AG9HY6c4-58vhqCj"; 
-  
-  const toTransaction = (encodedTransaction) => solanaWeb3.Transaction.from(Uint8Array.from(atob(encodedTransaction), c => c.charCodeAt(0)));
-  
-  const mintNft = async () => {
-      var myHeaders = new Headers();
-      myHeaders.append("x-api-key", PRIV_KEY);
-  
-      
-      const fileInput = document.querySelector("#fileInput");
-      
-      var formdata = new FormData();
-      formdata.append("network", "devnet");
-      formdata.append("wallet", publicKey);
-      formdata.append("name", "LazyBee NFT");
-      formdata.append("symbol", "LB");
-      formdata.append("description", "NFT Arts Platform!");
-      formdata.append("attributes", '[{"trait_type":"dev power","value":"over 900"}]');
-      formdata.append("external_url", "https://shyft.to");
-      formdata.append("max_supply", "1");
-      formdata.append("royalty", "5");//phần trăm hoa hồng nhận dc mỗi gd
-      formdata.append("file", fileInput.files[0],'index.jpg');
-      formdata.append("data", fileInput.files[0]);
-      formdata.append("nft_receiver", publicKey);
-      formdata.append('service_charge', `{"receiver": "2fmz8SuNVyxEP6QwKQs6LNaT2ATszySPEJdhUDesxktc","amount": 0.01}`);
-  
-      var requestOptions = {
-          method: 'POST',
-          headers: myHeaders,
-          body: formdata,
-          redirect: 'follow'
-      };
-  
-      fetch("https://api.shyft.to/sol/v1/nft/create_detach", requestOptions)
-          .then(async response => {
-              let res = await response.json();
-              let transaction = toTransaction(res.result.encoded_transaction);
-                      
-                      const signedTransaction = await window.phantom.solana.signTransaction(transaction);
-                      const connection = new solanaWeb3.Connection("https://api.devnet.solana.com");
-                      const signature = await connection.sendRawTransaction(signedTransaction.serialize());
-  
-                      console.log("TRANSACTION CONFIRMED!!")
-                      
-                  })
-                  .catch(error => console.log('Giao dịch thực hiện không thành công "Trancsaction failed!! "', error));
-          } 
-  
-  </script>
+<script src="nft.js"></script>
 </body>
 
 </html>
